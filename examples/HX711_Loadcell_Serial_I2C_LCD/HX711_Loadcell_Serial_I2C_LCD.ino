@@ -1,3 +1,25 @@
+/**
+ * History:
+ *  - 11/9/2024: da doc được Gram, hiển thị LCD I2C
+ * 
+ *  Load cell 20Kg hien thi LCD
+ *  - Wiring:
+ *      - Loadcell to HX711
+ *        - Red ------ E+
+ *        - Black ---- E-
+ *        - Green ---- A-
+ *        - White ---- A+
+ *      - HX711 to VUno
+ *        - Vcc ------ 5V
+ *        - GND ------ GND
+ *        - SCK ------ 3
+ *        - DT  ------ 2
+ *      - I2C LCD to Uno
+ *        - Vcc ------ 5V
+ *        - GND ------ GND
+ *        - SDA ------ SDA
+ *        - SCL ------ SCL
+ */
 #include "kxnTask_LoadCell.h"
 #include "kxnTask_I2CLCD.h"
 
