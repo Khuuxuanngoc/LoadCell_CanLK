@@ -5,7 +5,7 @@
 #include "Adafruit_HX711.h"
 #include <SimpleKalmanFilter.h>
 
-#define EN_kxnTask_LoadCell_DB
+// #define EN_kxnTask_LoadCell_DB
 
 #ifndef DEBUG_PRINTER
   #define DEBUG_PRINTER                                                          \

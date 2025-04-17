@@ -1,5 +1,10 @@
 /**
  * History:
+ *  - 17/4/2025:
+ *    - Thêm 1 button A1:
+ *      - 1 Click: làm tròn số hiện tại.
+ *      - 2 Click: Set SL 5.
+ *      - Long Click: Tare.
  *  - 21/9/2024:
  *    - Can duoc giay A5, hien thi I2C LCD loadcell 1kg
  *      - Nhap Serial 115200 NL+CR
@@ -30,10 +35,12 @@
 #include "kxnTask_LoadCell_Kalman.h"
 #include "kxnTask_I2CLCD.h"
 #include "kxnTask_cmd.h"
+#include "kxnTask_button.h"
 
 kxnTask_LoadCell kxnTask_LoadCell1;
 kxnTask_I2CLCD kxnTask_I2CLCD1;
 kxnTask_cmd kxnTask_cmd1;
+kxnTask_button kxnTask_button1;
 
 void setup() {
   Serial.begin(115200);
@@ -47,6 +54,7 @@ void setup() {
   kxnTask_LoadCell1.setup();
   kxnTask_I2CLCD1.setup();
   kxnTask_cmd1.setup(&kxnTask_LoadCell1);
+  kxnTask_button1.setup(&kxnTask_LoadCell1, A1);
 } 
 
 void loop() {
