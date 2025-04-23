@@ -74,7 +74,7 @@ void setupButton(int paButtonPin){
   // myButton->setPressTicks(1000);
   // myButton->setLongPressStop(0);
   // myButton->setNumberClicks(1);
-  myButton->setClickTicks(100);
+  myButton->setClickTicks(300);
   myButton->attachClick([](void *object) {
     kxnTask_button * self = (kxnTask_button *)object;
     long tempValue = (self->myLoadCell->getGram() + 0.4);
