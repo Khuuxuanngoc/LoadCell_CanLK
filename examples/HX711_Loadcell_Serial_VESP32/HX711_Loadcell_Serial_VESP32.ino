@@ -1,8 +1,12 @@
 #include "Adafruit_HX711.h"
 
-// Define the pins for the HX711 communication
+// // Define the pins for the HX711 communication Viet ESP32
+// const uint8_t DATA_PIN = 18; //2;  // Can use any pins!
+// const uint8_t CLOCK_PIN = 19; //3; // Can use any pins!
+
+// Define the pins for the HX711 communication VietESP32-S3
 const uint8_t DATA_PIN = 18; //2;  // Can use any pins!
-const uint8_t CLOCK_PIN = 19; //3; // Can use any pins!
+const uint8_t CLOCK_PIN = 17; //3; // Can use any pins!
 
 Adafruit_HX711 hx711(DATA_PIN, CLOCK_PIN);
 

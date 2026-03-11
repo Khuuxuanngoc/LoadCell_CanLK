@@ -29,7 +29,7 @@ const char LoadcellServer::INDEX_HTML[] PROGMEM = R"rawliteral(
         <button class="btn-blue full" onclick="s('ROUND')">ROUND</button>
         <button class="btn-green" onclick="s('SET_1')">Sample x1</button>
         <button class="btn-green" onclick="s('SET_5')">Sample x5</button>
-        <button class="btn-green" onclick="s('SET_10') Bryan">Sample x10</button>
+        <button class="btn-green" onclick="s('SET_10')">Sample x10</button>
         <button class="btn-green" onclick="s('SET_20')">Sample x20</button>
         <button class="btn-green full" onclick="s('SET_25')">Sample x25</button>
     </div>
