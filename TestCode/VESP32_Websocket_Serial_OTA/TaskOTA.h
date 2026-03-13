@@ -15,6 +15,7 @@ namespace TaskOTA {
     inline const char upload_html[] PROGMEM = R"rawliteral(
         <!DOCTYPE html><html><head><title>OTA Update</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
         <style>
             body{font-family:sans-serif; text-align:center; padding:50px; background:#f4f4f4;}
             .box{background:white; padding:30px; border-radius:10px; display:inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);}
